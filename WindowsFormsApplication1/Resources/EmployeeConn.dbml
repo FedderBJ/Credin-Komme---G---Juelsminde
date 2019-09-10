@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TEST-NAV" Class="EmployeeConnDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SQLNAV\SQLNAV;Initial Catalog=TEST-NAV;Integrated Security=True" SettingsObjectName="WindowsFormsApplication1.Properties.Settings" SettingsPropertyName="TEST_NAVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Credin$Employee" Member="Credin_Employees">
+    <Type Name="Credin_Employee">
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="No_" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[First Name]" Member="First_Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Middle Name]" Member="Middle_Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Last Name]" Member="Last_Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Initials" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Job Title]" Member="Job_Title" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="[Search Name]" Member="Search_Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Address 2]" Member="Address_2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Post Code]" Member="Post_Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="County" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Phone No_]" Member="Phone_No_" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Mobile Phone No_]" Member="Mobile_Phone_No_" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[E-Mail]" Member="E_Mail" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="[Alt_ Address Code]" Member="Alt__Address_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Alt_ Address Start Date]" Member="Alt__Address_Start_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Alt_ Address End Date]" Member="Alt__Address_End_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="[Birth Date]" Member="Birth_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Social Security No_]" Member="Social_Security_No_" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Union Code]" Member="Union_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Union Membership No_]" Member="Union_Membership_No_" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Country_Region Code]" Member="Country_Region_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Manager No_]" Member="Manager_No_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Emplymt_ Contract Code]" Member="Emplymt__Contract_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Statistics Group Code]" Member="Statistics_Group_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Employment Date]" Member="Employment_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Inactive Date]" Member="Inactive_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Cause of Inactivity Code]" Member="Cause_of_Inactivity_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Termination Date]" Member="Termination_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Grounds for Term_ Code]" Member="Grounds_for_Term__Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Global Dimension 1 Code]" Member="Global_Dimension_1_Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Global Dimension 2 Code]" Member="Global_Dimension_2_Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Resource No_]" Member="Resource_No_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Last Date Modified]" Member="Last_Date_Modified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Extension" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Pager" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Fax No_]" Member="Fax_No_" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Company E-Mail]" Member="Company_E_Mail" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Salespers__Purch_ Code]" Member="Salespers__Purch__Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[No_ Series]" Member="No__Series" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Default Work Center]" Member="Default_Work_Center" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Payed Advance_Behind]" Member="Payed_Advance_Behind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Frequency]" Member="Pay_Frequency" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Agreement Code]" Member="Pay_Agreement_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Slip Layout Name]" Member="Pay_Slip_Layout_Name" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Work Calendar Code]" Member="Work_Calendar_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Blocked" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Ascension Date]" Member="Ascension_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Bracket]" Member="Pay_Bracket" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Initial Pay Scale]" Member="Initial_Pay_Scale" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Seniority Date]" Member="Seniority_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Pension Code]" Member="Pension_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Current Pay Scale]" Member="Current_Pay_Scale" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Holiday Accumulation Basis]" Member="Holiday_Accumulation_Basis" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Holiday Calendar Code]" Member="Holiday_Calendar_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[G_L Posting Group Code]" Member="G_L_Posting_Group_Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Employment Rate (%)]" Member="Employment_Rate____" Type="System.Decimal" DbType="Decimal(38,20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Evaluation in Percent]" Member="Evaluation_in_Percent" Type="System.Decimal" DbType="Decimal(38,20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Week]" Member="Pay_Week" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Inactive Until (Date)]" Member="Inactive_Until__Date_" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Pension Payment ID]" Member="Pension_Payment_ID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="[Add_ Holiday Seniority Date]" Member="Add__Holiday_Seniority_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[ATP excempt]" Member="ATP_excempt" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Maternity Arrangement]" Member="Maternity_Arrangement" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Pay Slip by E-Mail]" Member="Pay_Slip_by_E_Mail" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[E-Mail for Pay Slip]" Member="E_Mail_for_Pay_Slip" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Tax Status]" Member="Tax_Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Production Unit No_]" Member="Production_Unit_No_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Income Type]" Member="Income_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Payroll Country Code]" Member="Payroll_Country_Code" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="[Workplace not Company Address]" Member="Workplace_not_Company_Address" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Benefit in kind etc_]" Member="Benefit_in_kind_etc_" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[ATP Code]" Member="ATP_Code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Free Puplic Transportation]" Member="Free_Puplic_Transportation" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Extra Tax %]" Member="Extra_Tax__" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Total Tax %]" Member="Total_Tax__" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Standard skattekorttype]" Member="Standard_skattekorttype" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[SE-No_]" Member="SE_No_" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="[Tax excempt]" Member="Tax_excempt" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[AM Contribution excempt]" Member="AM_Contribution_excempt" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Greenland municipality]" Member="Greenland_municipality" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[DA_LO Development Fund]" Member="DA_LO_Development_Fund" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Holiday days this year]" Member="Holiday_days_this_year" Type="System.Decimal" DbType="Decimal(38,20) NOT NULL" CanBeNull="false" />
+      <Column Name="NemKonto" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Calculate Holiday Hours]" Member="Calculate_Holiday_Hours" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Time Group Code]" Member="Time_Group_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Card No_]" Member="Card_No_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[PIN Code]" Member="PIN_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Terminal Language Code]" Member="Terminal_Language_Code" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="[Empl_ Time Stamp Batch Name]" Member="Empl__Time_Stamp_Batch_Name" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[Lessor Portal ID]" Member="Lessor_Portal_ID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Lessor Portal Active]" Member="Lessor_Portal_Active" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="LIF" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Holiday Reporting Type SE-No_]" Member="Holiday_Reporting_Type_SE_No_" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="ACF" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Language ID]" Member="Language_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Machine Center No_]" Member="Machine_Center_No_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Profile Type Code]" Member="Profile_Type_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NemRefusion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[NemRefusion Active]" Member="NemRefusion_Active" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[NemRefusion Spec_ Arrangement]" Member="NemRefusion_Spec__Arrangement" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Payment During Absence]" Member="Payment_During_Absence" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AbsenceConn">
+  <DataContextMoniker Name="/AbsenceConnDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b68a66c5-07c0-4ed7-99eb-6a7da5e716fe" absoluteBounds="0.5, 0.5, 2, 3.23266845703125">
+      <DataClassMoniker Name="/AbsenceConnDataContext/Credin_Cause_of_Absence" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd9b16e2-ac99-4145-b9bf-9fa7cb213379" absoluteBounds="0.515, 0.96, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

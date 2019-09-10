@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WorkCenterRelationConn">
+  <DataContextMoniker Name="/WorkCenterRelationConnDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f7262add-6c70-49b1-9dd5-34b845442fe0" absoluteBounds="0.5, 0.5, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/WorkCenterRelationConnDataContext/Credin_Employee_Work_Center_Relation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="634d7ab0-50bb-47ef-a3e0-a3cd5346cfbc" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

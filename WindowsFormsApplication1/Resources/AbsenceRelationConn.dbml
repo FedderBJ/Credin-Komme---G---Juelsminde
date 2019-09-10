@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TEST-NAV" Class="AbsenceRelationConnDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SQLNAV\SQLNAV;Initial Catalog=TEST-NAV;Integrated Security=True" SettingsObjectName="WindowsFormsApplication1.Properties.Settings" SettingsPropertyName="TEST_NAVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[Credin$Employee Absence Kode Relation]" Member="Credin_Employee_Absence_Kode_Relations">
+    <Type Name="Credin_Employee_Absence_Kode_Relation">
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[Employee No_]" Member="Employee_No_" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Absence Code]" Member="Absence_Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Absence Name]" Member="Absence_Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

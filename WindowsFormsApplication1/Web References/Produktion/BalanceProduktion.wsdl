@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="WSCreateProdRessLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="prodResCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="workCenterCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="startDateTime" type="dateTime" />
+            <element minOccurs="1" maxOccurs="1" name="endDateTime" type="dateTime" />
+            <element minOccurs="1" maxOccurs="1" name="companyCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateProdRessLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateTimeStampLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="timeGroupCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="absenceCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="date" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="time" type="time" />
+            <element minOccurs="1" maxOccurs="1" name="direction" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateTimeStampLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSShowAbsence">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="timeGroupCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tid" type="time" />
+            <element minOccurs="1" maxOccurs="1" name="direction" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSShowAbsence_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnSelectTimeGroup">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSReturnSelectTimeGroup_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="WSCreateProdRessLine">
+    <part name="parameters" element="tns:WSCreateProdRessLine" />
+  </message>
+  <message name="WSCreateProdRessLine_Result">
+    <part name="parameters" element="tns:WSCreateProdRessLine_Result" />
+  </message>
+  <message name="WSCreateTimeStampLine">
+    <part name="parameters" element="tns:WSCreateTimeStampLine" />
+  </message>
+  <message name="WSCreateTimeStampLine_Result">
+    <part name="parameters" element="tns:WSCreateTimeStampLine_Result" />
+  </message>
+  <message name="WSShowAbsence">
+    <part name="parameters" element="tns:WSShowAbsence" />
+  </message>
+  <message name="WSShowAbsence_Result">
+    <part name="parameters" element="tns:WSShowAbsence_Result" />
+  </message>
+  <message name="WSReturnSelectTimeGroup">
+    <part name="parameters" element="tns:WSReturnSelectTimeGroup" />
+  </message>
+  <message name="WSReturnSelectTimeGroup_Result">
+    <part name="parameters" element="tns:WSReturnSelectTimeGroup_Result" />
+  </message>
+  <portType name="BalanceProduktion_Port">
+    <operation name="WSCreateProdRessLine">
+      <input name="WSCreateProdRessLine" message="tns:WSCreateProdRessLine" />
+      <output name="WSCreateProdRessLine_Result" message="tns:WSCreateProdRessLine_Result" />
+    </operation>
+    <operation name="WSCreateTimeStampLine">
+      <input name="WSCreateTimeStampLine" message="tns:WSCreateTimeStampLine" />
+      <output name="WSCreateTimeStampLine_Result" message="tns:WSCreateTimeStampLine_Result" />
+    </operation>
+    <operation name="WSShowAbsence">
+      <input name="WSShowAbsence" message="tns:WSShowAbsence" />
+      <output name="WSShowAbsence_Result" message="tns:WSShowAbsence_Result" />
+    </operation>
+    <operation name="WSReturnSelectTimeGroup">
+      <input name="WSReturnSelectTimeGroup" message="tns:WSReturnSelectTimeGroup" />
+      <output name="WSReturnSelectTimeGroup_Result" message="tns:WSReturnSelectTimeGroup_Result" />
+    </operation>
+  </portType>
+  <binding name="BalanceProduktion_Binding" type="tns:BalanceProduktion_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="WSCreateProdRessLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion:WSCreateProdRessLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSCreateProdRessLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSCreateProdRessLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSCreateTimeStampLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion:WSCreateTimeStampLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSCreateTimeStampLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSCreateTimeStampLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSShowAbsence">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion:WSShowAbsence" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSShowAbsence">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSShowAbsence_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnSelectTimeGroup">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceProduktion:WSReturnSelectTimeGroup" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnSelectTimeGroup">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnSelectTimeGroup_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BalanceProduktion">
+    <port name="BalanceProduktion_Port" binding="tns:BalanceProduktion_Binding">
+      <address location="http://localhost:7047/DynamicsNAV-Test/ws/Credin/Codeunit/BalanceProduktion" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>
